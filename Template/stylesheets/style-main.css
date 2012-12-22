@@ -1,0 +1,233 @@
+* {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body
+{
+	margin:0px;
+	padding:0px;
+	background-color:black;
+}
+body > header:first-child >nav
+{
+	position:absolute;
+	top:0px;
+	left:0px;
+	overflow:hidden;
+	background-color:darkred;
+	width:100%;
+	padding:0px;
+	margin:0px;
+	box-shadow: 0 -5px 5px 5px;
+}
+body > header:first-child > nav:nth-child(4)
+{
+	position:fixed;
+	top:0px;
+	right:0px;
+	left:auto;
+	margin:0px;
+	padding:0px;
+	height:25px;
+	width:26px;
+	background-color:darkred;
+	line-height:25px;
+	box-shadow: 0px 0px 0px 0px;
+	color:white;
+	text-align:center;
+	
+	
+}
+body > header:first-child > nav:nth-child(4):hover
+{
+	background-color:#BF0000;
+}
+body > header:first-child > nav:nth-child(5)
+{
+	position:absolute;
+	top:0px;
+	right:0px;
+	left:auto;
+	margin:0px;
+	padding:0px;
+	height:25px;
+	width:26px;
+	background-color:darkred;
+	line-height:25px;
+	box-shadow: 0px 0px 0px 0px;
+	color:white;
+	text-align:center;
+	z-index:10;
+	
+	
+}
+body > header:first-child > nav:nth-child(6)
+{
+	position:fixed;
+}
+body > header:first-child >nav ol
+{
+	margin:0px;
+	padding:0px;
+	display:inline;
+	list-style:none;
+	font-family:arial;
+}
+body > header:first-child >nav ol:first-child
+{
+	float:left
+}
+body > header:first-child >nav ol:last-child
+{
+	float:right;
+}
+body > header:first-child > nav > ol > li
+{
+	padding:5px;
+	margin:0px;
+	display:inline;
+	color:white;
+	line-height:25px;
+	/*border-right:white solid 1px;
+}
+body > header:first-child > nav > ol > li:last-child
+{
+	border-right:none;*/
+}
+body > header:first-child > nav > ol > li > a
+{
+	margin:0px;
+	padding:0px;
+	text-decoration:none;
+	color:inherit;
+}
+body > header:first-child > nav > ol > li:hover
+{
+	background-color:#BF0000;
+}
+body > header:first-child > nav > ol:last-child > li:first-child:hover
+{
+	background-color:darkred;
+}
+body > header:first-child > nav > ol > li.notify
+{
+	display:none;
+}
+body > header:first-child > div#clickScreen
+{
+	position:fixed;
+	top:0px;
+	left:0px;
+	//background-color:gray;
+	width:100%;
+	height:100%
+}
+body > header:first-child > div#userInfo
+{
+	background-color:white;
+	border: 1px solid black;
+	position:fixed;
+	top:23px;
+	right:25px;
+	z-index:0;
+}
+body > header:first-child > div#userInfo > hgroup
+{
+	margin:5px;
+	margin-top:10px;
+	float:right;
+}
+body > header:first-child > div#userInfo > hgroup > h1
+{
+	margin:0px;
+	font-size:15px;
+}
+body > header:first-child > div#userInfo > hgroup > h2
+{
+	margin:0px;
+	font-size:12px;
+}
+body > header:first-child > div#userInfo > img
+{
+	float:left;
+	width:40px;
+	height:40px;
+	border:solid black 1px;
+	margin:5px;
+	margin-top:13px;
+}
+body > header:first-child > div#userInfo > nav
+{
+	width:100%;
+}
+body > header:first-child > div#userInfo > nav > ol
+{
+	margin:0px;
+	padding:0px;
+	list-type:none;
+	width:100%
+}
+body > header:first-child > div#userInfo > nav > ol > li
+{
+	padding:5px;
+	display:inline-block;
+	width:49%;
+	text-align:center;
+}
+body > header:first-child > div#userInfo > nav > ol > li:hover
+{
+	background-color:#E9E9E9;
+}
+body > header:first-child > div#userInfo > nav > ol >  li:first-child
+{
+	float:left;
+	clear:left;
+}
+body > header:first-child > div#userInfo > nav > ol >  li:last-child
+{
+	float:right;
+}
+body > header > hgroup
+{
+	margin-top:25px;
+	background-color:red;
+	color:white;
+	text-align:center;
+	margin-bottom:0px;
+	padding:5px;
+}
+body > header > hgroup > h1
+{
+	margin-bottom:0px;
+}
+body > header > hgroup > h2
+{
+	margin-top:0px;
+	font-size:large;
+}
+body > article#content
+{
+	background-color:white;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:0px;
+	width:1000px;
+	min-height:20px;
+	box-shadow: 0 -5px 5px 5px inset;
+	padding:20px;
+	height:1000px;
+}
+.hidden
+{
+	display:none;
+}
+@media only screen and (max-width:1000px)
+{
+	body > article#content
+	{
+		width: 100%;
+		min-width:500px;
+	}
+}
