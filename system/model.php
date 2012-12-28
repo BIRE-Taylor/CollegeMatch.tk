@@ -43,6 +43,7 @@ class Model {
 	    return date('Y-m-d H:i:s', $val);
 	}
 	
+	//executes mysql query and returns array of rows as objects
 	public function query($qry)
 	{
 		$result = mysql_query($qry) or die('MySQL Error: '. mysql_error());
@@ -53,10 +54,19 @@ class Model {
 		return $resultObjects;
 	}
 
+	//Executes mysql query and returns the raw mysql result object
 	public function execute($qry)
 	{
 		$exec = mysql_query($qry) or die('MySQL Error: '. mysql_error());
 		return $exec;
+	}
+
+	//Updates table $table with object $object in row identified by column $idColumn
+	//If $idColumn is null then Primary Key is used
+	//If $object is not found the it is created
+	public function updateOrCreate($table,$object,$idColumn)
+	{
+		
 	}
     
 }
