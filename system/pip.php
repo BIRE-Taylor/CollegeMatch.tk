@@ -12,10 +12,18 @@ function pip()
 	// Get request url and script url
 	$request_url = (isset($_SERVER['REQUEST_URI'])) ? $_SERVER['REQUEST_URI'] : '';
 	$script_url  = (isset($_SERVER['PHP_SELF'])) ? $_SERVER['PHP_SELF'] : '';
-    	
+    
+	$seg = explode('/',$config['base_url']);
+	$base = '';
+	if(count($seg)>3)
+	{
+		$base = implode('/',array_slice($seg,3));
+	}
+	
 	// Get our url path and trim the / of the left and the right
 	if($request_url != $script_url) $url = trim(preg_replace('/'. str_replace('/', '\/', str_replace('index.php', '', $script_url)) .'/', '', $request_url, 1), '/');
-    
+	//print_r($base);
+	$url = str_replace($base, '', $url);
 	// Split the url into segments
 	$segments = explode('/', $url);
 	
