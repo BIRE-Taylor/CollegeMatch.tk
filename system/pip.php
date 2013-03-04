@@ -1,5 +1,5 @@
 <?php
-
+ 
 function pip()
 {
 	global $config;

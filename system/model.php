@@ -7,9 +7,9 @@ class Model {
 	public function __construct()
 	{
 		global $config;
-		
 		$this->connection = mysql_pconnect($config['db_host'], $config['db_username'], $config['db_password']) or die('MySQL Error: '. mysql_error());
 		mysql_select_db($config['db_name'], $this->connection);
+
 	}
 
 	public function escapeString($string)
