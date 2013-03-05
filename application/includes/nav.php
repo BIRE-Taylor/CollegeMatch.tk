@@ -1,11 +1,8 @@
 <li>
-	<a href="/">Home</a>
+	<a href="index.php">Home</a>
 </li>
 <li>
-	Browse
-</li>
-<li>
-	Calendar
+	<a>Calendar</a>
 </li>
 <li>
 	About

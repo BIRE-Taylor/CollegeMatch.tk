@@ -11,6 +11,7 @@ $(function()
 	{
 		$(this).click(function()
 		{
+			$('#livesearchHead').slideToggle('slow');
 			$('#userInfo').slideToggle('slow');
 			$('#clickScreen').slideToggle('slow');
 		});
