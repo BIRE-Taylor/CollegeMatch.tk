@@ -10,3 +10,6 @@
 <li>
 	Support
 </li>
+<li>
+	<a onclick="openSearch();" >Search</a>
+</li>	

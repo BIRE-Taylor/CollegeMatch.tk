@@ -1,4 +1,4 @@
 <?php
-$q = $_POST['q'];
+$q = $_GET['q'];
 echo "<h3>Searching $q ... </h3>"
 ?>

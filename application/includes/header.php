@@ -1,6 +1,9 @@
 <div id="clickScreen" class="hidden">
 
 </div>
+<div class="search hidden" >
+	<input type="text" name="search" oninput="preformSearch($(this));" style="margin-top: 5px;">
+</div>
 <div id="userInfo" class="hidden">
 	<?php include(APP_DIR.'includes/userInfo.php'); ?>
 </div>

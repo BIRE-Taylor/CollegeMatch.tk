@@ -223,15 +223,6 @@ body > article#content
 {
 	display:none;
 }
-.search
-{
-	background-color:white;
-	border: 1px solid black;
-	position:fixed;
-	top:23px;
-	right:25px;
-	z-index:0;
-}
 @media only screen and (max-width:1000px)
 {
 	body > article#content
