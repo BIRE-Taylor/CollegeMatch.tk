@@ -23,7 +23,7 @@ function pip()
 	// Get our url path and trim the / of the left and the right
 	if($request_url != $script_url) $url = trim(preg_replace('/'. str_replace('/', '\/', str_replace('index.php', '', $script_url)) .'/', '', $request_url, 1), '/');
 	//print_r($base);
-	$url = str_replace($base, '', $url);
+	$url = str_ireplace($base, '', $url);
 	// Split the url into segments
 	$segments = explode('/', $url);
 	
@@ -46,7 +46,6 @@ function pip()
         require_once(APP_DIR . 'controllers/' . $controller . '.php');
         $action = 'index';
     }
-	
 	// Create object and call method
 	$obj = new $controller;
     die(call_user_func_array(array($obj, $action), array_slice($segments, 2)));
