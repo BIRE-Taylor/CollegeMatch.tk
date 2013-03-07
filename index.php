@@ -3,6 +3,8 @@
  * PIP v0.5.3
  */
 //Start the Session
+ob_start();  
+
 ini_set('error_reporting', E_ALL);
 session_start();
 // Defines

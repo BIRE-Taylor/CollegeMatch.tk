@@ -2,11 +2,17 @@
 
 class Controller {
 	
-	public function loadModel($name)
+	public function loadModel($name, $param = null)
 	{
 		require(APP_DIR .'models/'. strtolower($name) .'.php');
-
-		$model = new $name;
+		if($param==null)
+		{
+			$model = new $name;
+		}
+		else
+		{
+			$model = new $name($param);
+		}
 		return $model;
 	}
 	
